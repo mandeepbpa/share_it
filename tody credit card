@@ -1,0 +1,29 @@
+mylist=[1,34,5,7,8,5]
+print(mylist)
+
+otherlist=['apple' ,'mango', 'banana']
+print(otherlist)
+print(mylist[4])
+mylist.append(10) #insert at the last
+mylist.insert(5,50) # insert  at the give place
+print(mylist)
+mylist.remove(5)# remove by using the particlar thing
+print(mylist)
+mylist.pop(1) # remove using  index
+print(mylist)
+
+mylist.reverse() #sorting out the list
+print(mylist)
+# it help to merge two lisates  given a in a data program
+mergeList = mylist + otherlist
+print(mergeList)
+# it helps to multiply e the list with nay ingerter or numbver or with it self also
+mm = mylist * 2
+print(mm)
+
+#to select particulr the particular lsit odf arry or any string
+sel = mm[1:8:2]
+print(sel)
+# to find  a particualr thing in a list of any thing 
+isthr= 5 in mm
+print(isthr)
