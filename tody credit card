@@ -39,3 +39,28 @@ c=[c1,c2]
 print(c[1].getBalance())
 
 
+
+
+ int count= 0 ; 
+          int add =0;
+          while(count<=10){
+            add = add + count;
+             System.out.println(count +" sum is " + add );
+             ++count;
+          }
+          
+          
+          count = 1;
+          add = 0;
+          do {
+              add = add + count;
+              ++count;
+          System.out.println("print"+add);
+           
+          }
+          while (count>=10);
+          
+          add = 0;
+          for (int i=10; i>0; ++i){
+          add= add+i;}
+          System.out.println("print"+add);
