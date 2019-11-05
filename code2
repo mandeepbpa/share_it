@@ -1,0 +1,31 @@
+
+def main():
+
+    age = getAge()
+    weight = getWeight() 
+    birthMonth = getMonth()
+    correctAnswers(age, weight, birthMonth)
+
+
+def getAge():
+    age = input("Enter your guess for age: ")
+    return int(age)
+
+def getWeight():
+    weight = input("Enter your guess for weight: ")
+    return int(weight)
+
+def getMonth():
+    birthMonth = input("Enter your guess for birth month: ")
+    return str(birthMonth)
+
+
+def correctAnswers(age, weight, birthMonth):
+    if (age <= 25):
+          print ("Congratulations, the age is 25 or less")
+    if (weight >= 128):
+          print ("Congratulations, the weight is 128 or more")
+    if (birthMonth == "April"):
+          print ("Congratulations, the birth month is April")
+
+main()
