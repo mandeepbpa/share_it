@@ -29,3 +29,19 @@ def correctAnswers(age, weight, birthMonth):
           print ("Congratulations, the birth month is April")
 
 main()
+
+4DEC 
+
+
+
+declare @pricewithpool as float;
+select  @pricewithpool=avg([Sold Price]) from ['Whitby Current$']
+where RemarksForClients  like '%pool%'
+print @pricewithpool
+
+declare @pricewithout as float;
+select  @pricewithout=avg([Sold Price]) from ['Whitby Current$']
+where RemarksForClients not  like '%pool%'
+print @pricewithout
+
+print  @pricewithpool-@pricewithout
