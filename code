@@ -45,3 +45,34 @@ where RemarksForClients not  like '%pool%'
 print @pricewithout
 
 print  @pricewithpool-@pricewithout
+
+
+
+
+
+
+	declare @averageSellingPrice as INT;
+	declare @sumSeelingPrice as INT;
+	declare @soldPrice as INT;
+	declare @community as varchar(40);
+	declare @type as varchar(12);
+	declare @numberofrecords as INT;
+	set @numberofrecords = 0;
+	declare @dataCursor as cursor
+
+	set @datacursor = cursor for   
+	    select type, community, SoldPrice from ['Whitby Current$']
+
+
+
+	open @datacursor 
+
+	 while @@FETCH_STATUS = 0
+
+	 begin 
+	 print @soldPrice
+	 fetch next from @datacursor into @type, @community,@SoldPrice
+
+	 end
+
+	 print @numberofrecords
