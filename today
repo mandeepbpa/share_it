@@ -191,5 +191,94 @@ print @numberofrecords - @numberofrecordss
 
 
 
+                                    5 dec 
+				    
+				    
+select * from textarea
 
+
+select * from textarea;
+DELETE FROM textarea WHERE text IS NULL;
+
+Declare @TeslaWordCount as INT;
+select @TeslaWordCount =  count(*) from textarea where upper(text) like '%ENGINEER%'; 
+print @TeslaWordCount
+
+
+
+select len(text), text as a from textarea
+
+delete from textarea where len(text) < 62;
+
+
+
+delete from textarea 
+where upper(text) like '%GIFT%';
+select count(*) from textarea where upper(text) like '%ENGINEER%'; 
+
+59
+8
+7
+29
+22
+19
+
+
+declare my_cursor cursor for
+select  text 
+from textarea
+open my_cursor;
+
+while @@FETCH_STATUS =0
+begin
+   fetch next from my_cursor
+end
+
+declare @text varchar(50);
+declare my_cursor cursor for
+ select text from textarea
+ open my_cursor;
+ while (2>1)
+ begin 
+    fetch next from my_cursor into @text;
+	print @text;
+	end
+close my_cursor
+deallocate my_cursor
+
+
+declare @text varchar(50);
+declare my_cursor cursor for
+ select text from textarea
+ open my_cursor;
+ while @@FETCH_STATUS =0
+ begin 
+    fetch next from my_cursor into @text;
+	print @text;
+	end
+close my_cursor
+deallocate my_cursor
+
+
+
+declare @countit as  int;
+If @text = 'TESLA'
+begin
+   
+
+declare @text varchar(50);
+declare my_cursor cursor for
+select text from textarea
+where text = 'Tesla'
+open my_cursor;
+ while @@FETCH_STATUS =0
+begin 
+fetch next from my_cursor into @text;
+if (upper(@text) like '%TESLA%') and (upper(@text) like '%MUSK%')
+print @text;
+end
+close my_cursor
+deallocate my_cursor
+print @text				    
+				    
 	 
